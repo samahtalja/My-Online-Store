@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | product</title>
+
+  <link rel="icon" href="images/logo.jpeg">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <div class="top-header d-flex align-items-center py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <a href="">
+              <img width="50px" src="images/logo.jpeg" class="logo" alt="logo">
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 ">
+            <input type="text" placeholder="اكتب اسم المنتج للبحث عنه" class="form-control">
+          </div>
+
+
+
+
+          <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end he">
+            <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample"><span>
+                السلة
+              </span>
+              <i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample"><span>
+                الدخول
+              </span>
+              <i class="fa-solid fa-user"></i></a>
+            <a href=""><span>
+                المفضلة
+              </span>
+              <i class="fa-solid fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler  menu-icon" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div>
+            <button data-bs-toggle="offcanvas" href="#cart" class="navbar-toggler menu-icon" type="button">
+              <i class="fa-solid fa-cart-arrow-down"></i></a>
+            </button>
+            <button data-bs-toggle="offcanvas" href="#login" class="navbar-toggler menu-icon" type="button">
+              <i class="fa-solid fa-user"></i></a>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="category.html">الإلكترونيات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html"> الهواتف المحمولة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html"> الحواسيب </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">الكاميرات </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">الاكسسوارات </a>
+              </li>
+
+
+            </ul>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container mt-5">
+
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item active" aria-current="page">سماعات</li>
+        
+        </ol>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row justify-content-end ">
+        <div class=" col-md-4">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators carousel-img">
+                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active img-slider" src="images/Product Details1.jpg" alt="" >
+                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="img-slider"  src="images/ProductDetails2.jpg" alt="" >
+                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="img-slider"  src="images/Product Details3.jpg" alt="" >
+                    <img data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="img-slider"  src="images/Product Detiles4.jpg" alt="" >
+
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Product Details1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/ProductDetails2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Product Details3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Product Detiles4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              
+              </div>
+
+        </div>
+        <div class="col col-md-7">
+          <!-- <img class="mt-3" src="images/brand.png" alt="brand"> -->
+          <h1 class="modal-title fs-10 my-3">
+           
+BENGOO G9000
+          </h1>
+          <p class="product-description">
+            سماعة بينجو G9000 هي سماعة لعب متعددة الاستخدامات، تدعم PS4، PC، و Xbox One، وتتميز بمكبرات 40 مم، ميكروفون مضاد للضوضاء، وتصميم مريح لساعات اللعب الطويلة، مع نطاق تردد واسع وطول كابل يصل إلى 2.1 متر، متاحة بألوان متعددة.
+            
+             </p>
+          <div class="quick-reviews mb-3">
+            <span>
+              تقييمات المستخدمين :
+
+            </span>
+            <div class="stars d-inline-flex">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+          </div>
+          <div class="price mb-3">
+           <span></span>
+            <span>35$</span>
+          </div>
+          <div class="btns d-flex gap-3">
+            <div class="btn-group btns-quantity">
+              <button type="button" class="btn ">+</button>
+              <button type="button" class="btn ">1</button>
+              <button type="button" class="btn ">-</button>
+            </div>
+            <div class="d-flex gap-1  add-btn">
+              <button class="btn  color-change">إضافة للسلة</button>
+              <button class="btn  color-change">شراء الآن </button>
+            </div>
+
+          </div>
+          <hr>
+
+          <div class="gategory mb-3">
+            <span>التصنيفات :</span>
+            <a href=""> سماعات الألعاب</a>
+          </div>
+
+          <div class="share d-flex gap-3">
+            <span>:المشاركة</span>
+            <div class="share-icons gap-2">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </div>
+
+
+  <!-- start tabs -->
+<div class="container pt-5">
+
+
+  <ul class="nav nav-tabs ">
+
+    <li class="nav-item">
+      <a class="nav-link active"  data-bs-toggle="tab" href="#description">تفاصيل المنتج </a>
+     
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#reviews">المراجعات</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#watch">تعليمات الشحن</a>
+    </li>
+
+
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane fade mt-5 show active" id="description">
+      <div class="row row-cols-2 flex-column-reverse align-items-center flex-md-row">
+        <div class="col">
+        <p>الميكروفون المدمج في سماعة بينجو G9000 يتميز بتقنية إلغاء الضوضاء، مما يسمح بتواصل واضح ودقيق أثناء اللعب. يمكن ضبط الميكروفون بزاوية تصل إلى 120 درجة، مما يسهل توجيهه بشكل مريح أثناء الاستخدام. كما يأتي الميكروفون بحساسية تصل إلى -38+3 دي بيل، مما يساعد في التقاط الصوت بوضوح عالٍ حتى في البيئات الصاخبة. تتمتع السماعة بكابل طوله 2.1 متر، مما يوفر حرية حركة أكبر أثناء اللعب. تصميم الميكروفون القابل للتعديل يجعله مناسباً للاستخدام الطويل دون الإحساس بالإجهاد.</p>
+         <p>
+          المكبرات الصوتية في سماعة بينجو G9000 تأتي بحجم 40 مم، مما يوفر صوتًا واضحًا وعالي الجودة. تتميز السماعة بنطاق تردد واسع يصل من 15 هرتز إلى 20 كيلوهرتز، مما يسمح بتجربة صوتية غنية بالتفاصيل. كابل السماعة بطول 2.1 متر يوفر حرية حركة كبيرة أثناء اللعب دون القلق من تشابك الأسلاك. بالإضافة إلى ذلك، تم تصميم سماعة بينجو G9000 لتكون مريحة للغاية، حيث تحتوي على وسادات أذن من البروتين لتقليل التعرق والإصابة. هذا التصميم يضمن الراحة حتى خلال جلسات اللعب الطويلة.
+
+
+         </p>
+         <p>
+          سماعة بينجو G9000 تتميز بتصميم مريح يسهم في تقليل الإجهاد أثناء الاستخدام الطويل. الأذن الواسعة والمبطنة بالبروتين تساعد في تقليل التعرق، مما يجعلها مثالية لجلسات اللعب الطويلة. كما أن الإطار المتعدد النقاط يمكن ضبطه بسهولة لتوفير راحة شخصية أفضل. تتميز السماعة أيضًا بمرونة كبيرة بفضل الكابل الطويل، الذي يبلغ طوله 2.1 متر، مما يمنح اللاعبين حرية الحركة أثناء اللعب. كل هذه الميزات تجعل من بينجو G9000 خيارًا رائعًا للاعبين الذين يبحثون عن أداء وراحة في نفس الوقت.
+
+
+         </p>
+
+        </div>
+        <div class="col">
+          <img src="images/t1.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+    <div class="tab-pane fade mt-5 " id="reviews">
+      <div class="row flex-column-reverse flex-md-row justify-content-start gap-5 mb-2">
+        <div class="col col-md-5 review-section">
+          <h3 class="review-title"> يسعدنا إبداء رأيكم بالمنتج  </h3>
+          <form action="">
+            <div class="mb-3">
+              <label for="" class="form-lable">
+
+              </label>
+              <input type="text" class="form-control" placeholder="الرجاء إدخال الاسم">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-lable">
+
+              </label>
+              <input type="email" class="form-control" placeholder="الرجاء إدخال البريد">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-lable">
+
+              </label>
+             <textarea name="" id="" class="form-control" rows="5"></textarea>
+            </div>
+            <button class="btn btn-change">إرسال البيانات</button>
+          </form>
+        </div>
+        <div class="col col-md-5 review-section">
+          <h5 class="review-title">تقييمات العملاء </h5>
+          <p class="n d-inline">4.5</p><br>
+          <div class="stars d-inline-flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-title">  اكتشف المزيد من منتجاتنا المتنوعة في متجري الإلكتروني، واحصل على خصومات حصرية وخصائص مميزة تجعل تجربتك التسوقية فريدة.     ! </p>
+          <div class=" d-flex flex-column gap-4">
+           
+        <div class="d-flex align-items-center stars">
+          <span>5 <i class="fa-solid fa-star m-1 "></i> </span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 81%"></div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center stars">
+          <span>4 <i class="fa-solid fa-star m-1 "></i> </span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center stars">
+          <span>3 <i class="fa-solid fa-star m-1 "></i> </span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 35%"></div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center stars">
+          <span>2 <i class="fa-solid fa-star m-1 "></i> </span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 25%"></div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center stars">
+          <span>1 <i class="fa-solid fa-star m-1 "></i> </span>
+          <div class="progress flex-grow-1" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%"></div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    </div>
+    <div class="tab-pane fade mt-5 " id="watch">
+
+      <div class="tab-pane fade mt-5 show active" id="description">
+        <div class="row row-cols-2 flex-column-reverse align-items-center flex-md-row">
+          <div class="col">
+            
+            <h2 class="review-title">تعليمات الشحن للاجهزة الالكترونية</h2>
+          <p>
+            لتوصيل المنتج مباشرة إلى باب منزلك، نقوم بالعمل مع شركات شحن موثوقة لضمان سرعة وأمان التوصيل. بعد شحن الطلب، ستتلقى رقم تتبع لتتمكن من متابعة حالة الشحنة حتى وصولها إلى عنوانك. إذا واجهت أي تأخير، يمكن لخدمة العملاء مساعدتك على الفور.
+
+
+          </p>
+            <h3 class="review-title">شرح عن موضوع التغليف الآمن</h3>
+            <!-- <h3 class="review-title"> التعامل مع البطاريات</h3>-->
+            <p>
+              لضمان وصول المنتجات بحالة ممتازة، نحرص على تغليفها بشكل آمن باستخدام مواد عالية الجودة تحميها من الصدمات والتلف. نقوم بوضع المنتجات في صناديق قوية مع حشوات واقية لضمان ثباتها أثناء الشحن. كما نراعي استخدام أشرطة لاصقة متينة لضمان بقاء التغليف محكمًا حتى وصوله إلى باب منزلك.
+            </p> 
+            <h3 class="review-title">  تفاصيل الشحن </h3>
+            <p>
+             لتوصيل المنتج مباشرة إلى منزلك، يمكنك تحديد عنوان الشحن الدقيق أثناء إتمام عملية الطلب. سنقوم بشحن المنتج باستخدام شركات الشحن الموثوقة لضمان وصوله إليك بسرعة وأمان.
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/Shipping a product.png" alt="صورة خاصة بموضوع الشحن" class="img-fluid">
+          </div>
+        </div>
+  
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+<!-- end tabs -->
+
+
+
+  <!-- start related products -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class=" section-title">منتجات مشابهة </h2>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+           
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass "></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar1.jpg" alt="product" >
+              <div class="product-info">
+                <h3>
+
+                 
+Turtle Beach </h3>
+                <!-- <p>أحدث الأجهزة</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 34$
+                  </span>
+                  <span>40$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar2.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                  
+SENZER SG500 </h3>
+                <!-- <p>أحدث السماعات</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 21$
+                  </span>
+                  <span>30$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar3.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                 
+BENGOO V-4 </h3>
+                <!-- <p>أحدث الأجهزة</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 22$
+                  </span>
+                  <span>25$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar4.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                
+Jeecoo V20U </h3>
+                <!-- <p>أحدث الساعات</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 35$
+                  </span>
+                  <span>29$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar5.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                 
+acer PS5</h3>
+                <!-- <p>أحدث الأجهزة</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 35$
+                  </span>
+                  <span>45$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+
+              <img src="images/similar6.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                 
+BlueFire Stereo </h3>
+                <!-- <p>أحدث الأجهزة</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 19$
+                  </span>
+                  <span>23$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar7.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+                  
+Gaming Headset</h3>
+                <!-- <p>أحدث الأجهزة</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 25$
+                  </span>
+                  <span>29$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product mb-3 phones swiper-slide">
+            <div class="card overflow-hidden">
+              <div class="quick-icons">
+                <a href="#quick-product" data-bs-toggle="modal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+
+              </div>
+              <img src="images/similar8.jpg" alt="product">
+              <div class="product-info">
+                <h3>
+
+               
+ETWAR EG100 </h3>
+                <!-- <p>أحدث الكاميرات</p> -->
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="price mb-2">
+                  <span>
+                    السعر 22$
+                  </span>
+                  <span>26$</span>
+                </div>
+                <button onclick="alert(' تم إضافة المنتج للسلة بنجاح ')" class="btn btn-change w-100">اضافة
+                  للسلة</button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </div>
+
+  </section>
+<!-- end related products -->
+
+
+  <!-- start footer -->
+ <footer >
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col f1 mb-3">
+          <img src="images/logo.jpeg" class="w-25 img-fluid logo" alt="logo" >
+          <p> 
+            مرحبًا بكم في متجرنا  للإلكترونيات، وجهتك المثالية لأحدث الابتكارات في عالم التكنولوجيا. استمتع بتجربة تسوق فريدة مع مجموعة واسعة من الأجهزة الإلكترونية المميزة وخدمة عملاء استثنائية. 
+    
+     </p>
+          <ul class="navbar-nav">
+            <li>
+              <i><i class="fa-solid fa-map-location-dot p-2"></i>سوريا-إدلب</i> </li>
+              <li>   <i><i class="fa-solid fa-phone p-2"></i>+96324154585 </i> </li>
+                <li>  <i><i class="fa-solid fa-envelope p-2"></i>prime elc@gmail.com</i></li>
+              
+           
+           
+          </ul>
+    
+        </div>
+        <div class="col f2 mb-3">
+          <h3> أهم الروابط</h3>
+          <ul class="navbar-nav ">
+            <li><a href="">صفحة المنتجات</a></li>
+            <li><a href="">عروض وتخفيضات</a></li>
+            <li><a href="">الأسئلة الشائعة</a></li>
+            <li><a href="">مدونة</a></li>
+           
+          </ul>
+        </div>
+        <div class="col f3 mb-3">
+          <h3> التصنيفات </h3>
+          <ul class="navbar-nav ">
+            <li><a href="">الهواتف الذكية</a></li>
+            <li><a href="">الحواسيب المحمولة</a></li>
+            <li><a href="">الأجهزة اللوحية</a></li>
+            <li><a href="">الكاميرات</a></li>
+          </ul>
+        </div>
+        <div class="col f4 mb-3">
+          <h3>النشرة البريدية</h3>
+          </p>
+          تسجيلك في نشرتنا البريدية يعني أنك لن تفوت أي عرض أو منتج جديد في عالم الإلكترونيات. احصل على آخر الأخبار، التحديثات، والعروض الخاصة مباشرة في بريدك الإلكتروني!
+          <p>
+            <form action="">
+              <input type="text" placeholder="الرجاء إدخال البريد" class="form-control">
+              <button class="btn btn-change m-3 w-50">اشتراك</button>
+            </form>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col ">
+          <img src="images/price.png"  alt="وسائل الدفع المتاحة في المتجر">
+        </div>
+    <div class="col d-flex justify-content-end">
+      <p class="text-center "> جميع الحقوق محفوظة ©Prime Electronics. </p>
+    </div>
+      </div>
+    </div>
+    
+    
+     </footer>
+    <!-- end footer -->
+
+
+
+
+
+     <!-- cart -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">سلة المشتريات</h5>
+
+    </div>
+    <div class="offcanvas-body">
+      <div class="row row-cols-1 row-card">
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card3.jpg" alt="">
+          <p>
+            SAMSUNG A15
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card4.jpg" alt="">
+          <p>
+            JBL Tune 520BT
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/sliderr4.jpg" alt="">
+          <p>
+
+
+            Boean Bluetooth
+
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card6.jpg" alt="">
+          <p>
+            TP-Link
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+      <div class="d-flex flex-column gap-3">
+        <p class="alert alert-danger p-3 text-center my-3">مجموع المنتجات 250$ فقط</p>
+
+        <button class="btn btn-primary w-100 color-change ">عرض السلة </button>
+        <button class="btn btn-info w-100 color-change tw text-white">إتمام الطلب</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="login">تسجيل لدخول </h5>
+
+    </div>
+    <div class="offcanvas-body">
+      <div class=".mini-login">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label"> اسم المستخدم أو البريد </label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"> تذكر بياناتي </label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+        </form>
+        <div class="alert alert-danger my-3 text-center">
+          <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+
+        </div>
+        <hr>
+
+        <div class="text-center mt-5">
+          <i class="fa-regular fa-user fa-3x"></i>
+          <p>لا يوجد لديك حساب ؟</p>
+          <a href="" class="btn btn-danger w-100 text-white">إنشاء حساب جديد</a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>

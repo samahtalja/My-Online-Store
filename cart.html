@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | Cart</title>
+
+  <link rel="icon" href="images/logo.jpeg">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <div class="top-header d-flex align-items-center py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <a href="">
+              <img width="50px" src="images/logo.jpeg" class="logo" alt="logo">
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 ">
+            <input type="text" placeholder="اكتب اسم المنتج للبحث عنه" class="form-control">
+          </div>
+
+
+
+
+          <div class="col-md-4 left-header d-flex align-items-center d-none d-lg-flex justify-content-end he">
+            <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample"><span>
+                السلة
+              </span>
+              <i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample"><span>
+                الدخول
+              </span>
+              <i class="fa-solid fa-user"></i></a>
+            <a href=""><span>
+                المفضلة
+              </span>
+              <i class="fa-solid fa-heart"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttom-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler  menu-icon" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div>
+            <button data-bs-toggle="offcanvas" href="#cart" class="navbar-toggler menu-icon" type="button">
+              <i class="fa-solid fa-cart-arrow-down"></i></a>
+            </button>
+            <button data-bs-toggle="offcanvas" href="#login" class="navbar-toggler menu-icon" type="button">
+              <i class="fa-solid fa-user"></i></a>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="category.html">الإلكترونيات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html"> الهواتف المحمولة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html"> الحواسيب </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">الكاميرات </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">الاكسسوارات </a>
+              </li>
+
+
+            </ul>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+      </nav>
+    </div>
+  </header>
+
+
+<!-- start bunner -->
+<section class="bunner d-flex justify-content-center align-items-center">
+    <h1 class="category-title">سلة المشتريات </h1>
+  
+ </section>
+<!-- end bunner -->
+
+<div class="container mt-5">
+    <div class="row d-flex justify-content-between  ">
+        <div class="col-md-8">
+            <div class="row row-cols-1 row-card">
+
+
+                <div class="col mini-card d-flex gap-2 justify-content-between align-items-center px-3">
+                  <div class="d-flex flex-column gap-1">
+                  <p class="cart-product-title">
+                     المنتج
+                  </p>
+                  </div>
+                  <p class="cart-product-title">
+السعر                  </p>
+                  <p class="cart-product-title">
+                  الكمية
+                  </p>
+
+                  <p class="cart-product-title">
+الإجمالي                  </p>
+    
+                </div>
+
+
+                <div class="col mini-card d-flex gap-2 justify-content-between align-items-center px-3">
+                  <div class="d-flex  gap-2 align-items-center flex-column flex-md-row">
+                    <img class="img-fluid " width="70px" src="images/card3.jpg" alt="">
+                  <p>
+                    SAMSUNG A15
+                  </p>
+                  </div>
+                  <p>
+                    250$
+                  </p>
+                  <div class="btn-group btns-card  btns-quantity">
+                    <button type="button" class="btn ">+</button>
+                    <button type="button" class="btn ">1</button>
+                    <button type="button" class="btn ">-</button>
+                  </div>
+
+                  <p>
+                    250$
+                  </p>
+    
+                </div>
+                <div class="col mini-card d-flex gap-2 justify-content-between align-items-center px-3">
+                  <div class="d-flex  gap-2 align-items-center flex-column flex-md-row">
+                    <img class="img-fluid " width="70px" src="images/card4.jpg" alt="">
+                    <p>
+                      JBL Tune 520BT
+                    </p>
+                  </div>
+                  <p>
+                    125$
+                  </p>
+                  <div class="btn-group btns-card  btns-quantity">
+                    <button type="button" class="btn ">+</button>
+                    <button type="button" class="btn ">1</button>
+                    <button type="button" class="btn ">-</button>
+                  </div>
+
+                  <p>
+                    125$
+                  </p>
+    
+                </div>
+                <div class="col mini-card d-flex gap-2 justify-content-between align-items-center px-3">
+                  <div class="d-flex  gap-2 align-items-center flex-column flex-md-row">
+                    <img class="img-fluid " width="70px" src="images/sliderr4.jpg" alt="">
+                    <p>
+          
+          
+                      Boean Bluetooth
+          
+                    </p>
+                  </div>
+                  <p>
+                    100$
+                  </p>
+                  <div class="btn-group btns-card  btns-quantity">
+                    <button type="button" class="btn ">+</button>
+                    <button type="button" class="btn ">1</button>
+                    <button type="button" class="btn ">-</button>
+                  </div>
+
+                  <p>
+                    100$
+                  </p>
+    
+                </div>
+                <div class="col mini-card d-flex gap-2 justify-content-between align-items-center px-3">
+                  <div class="d-flex  gap-2 align-items-center flex-column flex-md-row">
+                    <img class="img-fluid" width="70px" src="images/card6.jpg" alt="">
+                    <p>
+                      TP-Link
+                    </p>
+                  </div>
+                  <p>
+                    75$
+                  </p>
+                  <div class="btn-group btns-card  btns-quantity">
+                    <button type="button" class="btn ">+</button>
+                    <button type="button" class="btn ">1</button>
+                    <button type="button" class="btn ">-</button>
+                  </div>
+
+                  <p>
+                    75$
+                  </p>
+    
+                </div>
+              
+              </div>
+              <div class="code d-flex mt-3 gap-3">
+                <input type="text" class="form-control w-25" >
+                <button class="btn btn-change">
+                    تطبيق الكوبون
+                </button>
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="summery mt-5">
+                    <h4 class="cart-product-title mb-3">ملخص سلة المشتريات</h4>
+                    <div class="d-flex justify-content-between cart-item">
+                            <p>المجموع:</p>
+                            <p>550$</p>
+                           
+
+                    </div>
+                    <!-- <hr> -->
+                    <div class="d-flex justify-content-between cart-item">
+                            <p>قيمة الخصم:</p>
+                            <p>100$</p>
+                            
+                        </div>
+                        
+                    <div class="d-flex justify-content-between cart-item">
+                            <p>الإجمالي:</p>
+                            <p>450$</p>
+                            
+                        </div>
+                        <!-- <hr> -->
+                        <div class="d-flex gap-2 justify-content-between ">
+                            <button class="btn btn-change">العودة للمتجر</button>
+                            <button class="btn btn-change">إتمام الطلب </button>
+                        </div>
+                  
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- start footer -->
+<footer >
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col f1 mb-3">
+          <img src="images/logo.jpeg" class="w-25 img-fluid logo" alt="logo" >
+          <p> 
+            مرحبًا بكم في متجرنا  للإلكترونيات، وجهتك المثالية لأحدث الابتكارات في عالم التكنولوجيا. استمتع بتجربة تسوق فريدة مع مجموعة واسعة من الأجهزة الإلكترونية المميزة وخدمة عملاء استثنائية. 
+    
+     </p>
+          <ul class="navbar-nav">
+            <li>
+              <i><i class="fa-solid fa-map-location-dot p-2"></i>سوريا-إدلب</i> </li>
+              <li>   <i><i class="fa-solid fa-phone p-2"></i>+96324154585 </i> </li>
+                <li>  <i><i class="fa-solid fa-envelope p-2"></i>prime elc@gmail.com</i></li>
+              
+           
+           
+          </ul>
+    
+        </div>
+        <div class="col f2 mb-3">
+          <h3> أهم الروابط</h3>
+          <ul class="navbar-nav ">
+            <li><a href="">صفحة المنتجات</a></li>
+            <li><a href="">عروض وتخفيضات</a></li>
+            <li><a href="">الأسئلة الشائعة</a></li>
+            <li><a href="">مدونة</a></li>
+           
+          </ul>
+        </div>
+        <div class="col f3 mb-3">
+          <h3> التصنيفات </h3>
+          <ul class="navbar-nav ">
+            <li><a href="">الهواتف الذكية</a></li>
+            <li><a href="">الحواسيب المحمولة</a></li>
+            <li><a href="">الأجهزة اللوحية</a></li>
+            <li><a href="">الكاميرات</a></li>
+          </ul>
+        </div>
+        <div class="col f4 mb-3">
+          <h3>النشرة البريدية</h3>
+          </p>
+          تسجيلك في نشرتنا البريدية يعني أنك لن تفوت أي عرض أو منتج جديد في عالم الإلكترونيات. احصل على آخر الأخبار، التحديثات، والعروض الخاصة مباشرة في بريدك الإلكتروني!
+          <p>
+            <form action="">
+              <input type="text" placeholder="الرجاء إدخال البريد" class="form-control">
+              <button class="btn btn-change m-3 w-50">اشتراك</button>
+            </form>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 mt-3">
+        <div class="col ">
+          <img src="images/price.png"  alt="وسائل الدفع المتاحة في المتجر">
+        </div>
+    <div class="col d-flex justify-content-end">
+      <p class="text-center "> جميع الحقوق محفوظة ©Prime Electronics. </p>
+    </div>
+      </div>
+    </div>
+    
+    
+     </footer>
+    <!-- end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- modal -->
+ <div class="modal fade" id="quick-product" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> Motorola razr</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-1 row-cols-md-2 ">
+            <div class="col">
+              <img class="img-fluid" src="images/sliderr1.jpg" alt=" Motorola razr">
+              <button class="btn btn-info w-100 color-change text-white">كافة التفاصيل</button>
+            </div>
+            <div class="col">
+              <img class="mt-3" src="images/brand.png" alt="brand">
+              <h1 class="modal-title fs-5 my-3">
+                Samsung S24
+              </h1>
+              <p class="product-description">معلومات عن المنتج</p>
+              <div class="quick-reviews mb-3">
+                <span>
+                  تقييمات المستخدمين :
+
+                </span>
+                <div class="stars d-inline-flex">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+
+              </div>
+              <div class="price mb-3">
+                <span>
+                  السعر 400$
+                </span>
+                <span>450$</span>
+              </div>
+              <div class="btns d-flex gap-3">
+                <div class="btn-group btns-quantity">
+                  <button type="button" class="btn ">+</button>
+                  <button type="button" class="btn ">1</button>
+                  <button type="button" class="btn ">-</button>
+                </div>
+                <div class="d-flex gap-1  add-btn">
+                  <button class="btn btn-danger color-change">إضافة للسلة</button>
+                  <button class="btn btn-primary color-change">شراء الآن </button>
+                </div>
+
+              </div>
+              <hr>
+
+              <div class="gategory mb-3">
+                <span>التصنيفات :</span>
+                <a href="">جوالات سامسونج</a>
+              </div>
+
+              <div class="share d-flex gap-3">
+                <span>:المشاركة</span>
+                <div class="share-icons gap-2">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+            first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  
+  <!-- cart -->
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">سلة المشتريات</h5>
+
+    </div>
+    <div class="offcanvas-body">
+      <div class="row row-cols-1 row-card">
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card3.jpg" alt="">
+          <p>
+            SAMSUNG A15
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card4.jpg" alt="">
+          <p>
+            JBL Tune 520BT
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/sliderr4.jpg" alt="">
+          <p>
+
+
+            Boean Bluetooth
+
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <div class="col mini-card d-flex gap-2 justify-content-between align-items-center">
+          <img class="img-fluid w-25" src="images/card6.jpg" alt="">
+          <p>
+            TP-Link
+          </p>
+          <div class="btn-group btns-card">
+            <button type="button" class="btn ">+</button>
+            <button type="button" class="btn ">1</button>
+            <button type="button" class="btn ">-</button>
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+
+      <div class="d-flex flex-column gap-3">
+        <p class="alert alert-danger p-3 text-center my-3">مجموع المنتجات 250$ فقط</p>
+
+        <button class="btn btn-primary w-100 color-change ">عرض السلة </button>
+        <button class="btn btn-info w-100 color-change tw text-white">إتمام الطلب</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- login -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="login">تسجيل لدخول </h5>
+
+    </div>
+    <div class="offcanvas-body">
+      <div class=".mini-login">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label"> اسم المستخدم أو البريد </label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"> تذكر بياناتي </label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+        </form>
+        <div class="alert alert-danger my-3 text-center">
+          <a href="">انقر هنا في حال نسيت كلمة المرور</a>
+
+        </div>
+        <hr>
+
+        <div class="text-center mt-5">
+          <i class="fa-regular fa-user fa-3x"></i>
+          <p>لا يوجد لديك حساب ؟</p>
+          <a href="" class="btn btn-danger w-100 text-white">إنشاء حساب جديد</a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
